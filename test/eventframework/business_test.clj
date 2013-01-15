@@ -20,7 +20,7 @@
       (update-state {:type :subscribe :body {:user "foo" :thread "thread"}}))
      "thread"
      "bar")
-    => false
+    => true
     (:events (apply-commands
               "user"
               initial-state
@@ -35,7 +35,7 @@
                 :body {:thread "1" :message "foo"}}]))
     =>
     [{:type :newthread, :id "1", :body {:title "title"}}
-     {:type :subscribe
+     {:type :subcribe
       :id "2",
       :body {:thread "1", :user "user"},
       :extraevents [],
