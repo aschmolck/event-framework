@@ -15,7 +15,7 @@
   :main eventframework.webwrapper
   :profiles {
     :dev {:dependencies [[ring-mock "0.1.3"]]
-          :plugins [[lein-midje "2.0.2"]]}})
+          :plugins [[lein-midje "2.0.4"]]}})
 
 ; Copied in rather than added as dependency:
 
