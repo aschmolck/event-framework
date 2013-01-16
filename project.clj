@@ -17,7 +17,7 @@
   :profiles {
     :dev {:dependencies [[ring-mock "0.1.3"]]
           :plugins [[lein-midje "2.0.4"]]}}
-  :jvm-opts ["-Dwebdriver.chrome.driver=/usr/bin/google-chrome"])
+  )
 
 ; Copied in rather than added as dependency:
 
