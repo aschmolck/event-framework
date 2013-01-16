@@ -32,7 +32,7 @@
         (apply-or-enqueue-listener! initial-position (append-callback res))
         (put-command! {:id "id" :foo "foo"})
         (deref res)))
-    => [{:id "id" :foo "foo" :bar "bar"}]
+    => [{:id "id" :foo "foo"}]
     (with-clear-commands
       (put-command! {:id "id" :foo "foo"})
       (put-command! {:id "id2" :foo "foo"})
