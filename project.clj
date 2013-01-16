@@ -8,14 +8,16 @@
                  [aleph "0.2.2"]
                  [cheshire "5.0.1"]
                  [ring/ring-json "0.1.2"]
-                 [midje "1.4.0"]]
+                 [midje "1.4.0"]
+                 [clj-webdriver "0.6.0-beta2"]]
   :min-lein-version "2.0.0"
   :plugins [[environ/environ.lein "0.2.1"]]
   :hooks [environ.leiningen.hooks]
   :main eventframework.webwrapper
   :profiles {
     :dev {:dependencies [[ring-mock "0.1.3"]]
-          :plugins [[lein-midje "2.0.4"]]}})
+          :plugins [[lein-midje "2.0.4"]]}}
+  :jvm-opts ["-Dwebdriver.chrome.driver=/usr/bin/google-chrome"])
 
 ; Copied in rather than added as dependency:
 
