@@ -232,7 +232,7 @@
 
 (deftest selenium-test
 
-  (taxi/set-driver! {:browser :firefox})
+  (taxi/set-driver! {:browser :chrome})
   (let [port 8887
         server-stop (aleph.http/start-http-server
                 (aleph.http/wrap-ring-handler eventframework.app/app)
